@@ -8,12 +8,13 @@
 # /_/ /_/\____/_.___/\____/_/ /_/_/\___/_/|_|\___/_/____/ 
 
 __title__   = 'hobonickels'
-__version__ = '0.1'
+__version__ = '0.2'
 __author__  = '@c0ding'
 __repo__    = 'https://github.com/c0ding/hobonickels-api'
 __license__ = 'Apache v2.0 License'
 
 import hobonickels_utils
 from hobonickels_api import (
-	about, difficulty, block_count, total_coins, to_btc
+	about, difficulty, block_count, total_coins, addressbalance, addresshash,
+	checkaddress, to_btc
 )
