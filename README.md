@@ -2,7 +2,7 @@
 
 hobonickels is an APACHE licensed library written in Python designed to provide a simple to use API for the hobonickels cryptocurrency.
 
-## More about Worldcoin:
+## More about HoboNickels:
 
 HoboNickels is a cryptographic currency, similar to Bitcoin, that is designed to make online transactions easy and efficient.
 
