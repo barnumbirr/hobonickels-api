@@ -1,0 +1,8 @@
+STATS
+COPYING
+setup.py
+README.md
+hobonickels/__init__.py
+tests/hobonickels_tests.py
+hobonickels/hobonickels_api.py
+hobonickels/hobonickels_utils.py
