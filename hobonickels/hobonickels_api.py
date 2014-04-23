@@ -7,7 +7,7 @@ from hobonickels_utils import exchange
 from hobonickels_utils import blockexplorer
 
 __title__   = 'hobonickels'
-__version__ = '0.2'
+__version__ = '0.3'
 __author__  = '@c0ding'
 __repo__    = 'https://github.com/c0ding/hobonickels-api'
 __license__ = 'Apache v2.0 License'
@@ -24,6 +24,17 @@ def difficulty():
 
 	d = urllib.urlopen(blockexplorer('getdifficulty'))
 	return float(d.read())
+
+
+def hashrate():
+	"""Returns the current network hashrate."""
+
+	c = block_count()
+	blocks = "%.0f" %c
+	d = urllib.urlopen(blockexplorer('nethash') + '/' + str(blocks))
+	last_line = d.readlines()[-1]
+	e = last_line.split(',')
+	return e[-1]
 
 
 def block_count():
@@ -51,7 +62,7 @@ def addressbalance(PARAMETER):
 	return float(d.read())
 
 
-def addresshash(PARAMETER):
+def addresstohash(PARAMETER):
 	"""Returns the public key hash encoded in an address.
 	   [PARAMETER] is required and should be a HBN address.
 	"""
@@ -71,13 +82,58 @@ def checkaddress(PARAMETER):
 	
 
 # disabled as function is duplicate of checkaddress()
-#def decode_address(PARAMETER):
-#	"""Returns the version prefix and hash encoded in an address
-#	   [PARAMETER] is required and can be any crypto address.
-#	"""
+# def decode_address(PARAMETER):
+#	 """Returns the version prefix and hash encoded in an address
+#	    [PARAMETER] is required and can be any crypto address.
+#	 """
 #
-#	d = urllib.urlopen(blockexplorer('decode_address') + '/' + str(PARAMETER))
-#	return d.read()
+#	 d = urllib.urlopen(blockexplorer('decode_address') + '/' + str(PARAMETER))
+#	 return d.read()
+
+
+def getreceivedbyaddress(PARAMETER):
+	"""Returns amount of HBN received by an address.
+	   [PARAMETER] is required and should be a HBN address.
+	"""
+
+	d = urllib.urlopen(blockexplorer('getreceivedbyaddress') + '/' + str(PARAMETER))
+	return d.read()
+
+
+def getsentbyaddress(PARAMETER):
+	"""Returns amount of HBN sent by an address.
+	   [PARAMETER] is required and should be a HBN address.
+	"""
+
+	d = urllib.urlopen(blockexplorer('getsentbyaddress') + '/' + str(PARAMETER))
+	return d.read()
+
+
+def hashpubkey(PARAMETER):
+	"""Returns the 160-bit hash of PUBKEY.
+	   [PARAMETER] is required and should be a PUBKEY.
+	"""
+
+	d = urllib.urlopen(blockexplorer('hashpubkey') + '/' + str(PARAMETER))
+	return d.read()
+
+
+def hashtoaddress(PARAMETER):
+	"""Converts a 160-bit hash to an address.
+	   [PARAMETER] is required and should be an address hash.
+	"""
+
+	d = urllib.urlopen(blockexplorer('hashtoaddress') + '/' + str(PARAMETER))
+	return d.read()
+
+
+def translate_address(PARAMETER):
+	"""Translates address for use in HBN chain
+	   [PARAMETER] is required and can be any crypto address.
+	"""
+
+	d = urllib.urlopen(blockexplorer('translate_address') + '/' + str(PARAMETER))
+	return d.read()
 
 
 def to_btc():

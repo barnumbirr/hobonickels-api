@@ -24,7 +24,120 @@ or install from PyPi
 
 This API can currently retrieve the following stats from [hbn.blockx.info](http://hbn.blockx.info/) and [CryptoCoin](http://www.cryptocoincharts.info)
 
-Work in progress
+### Network:
+
+  - Difficulty:
+
+```
+>>> import hobonickels
+>>> hobonickels.get_difficulty()
+5.469
+```
+
+  - Hashrate:
+
+```
+>>> hobonickels.hashrate()
+114711299
+```
+
+  - Block count:
+
+```
+>>> hobonickels.block_count()
+783661.0
+```
+
+  - Total coins:
+
+```
+>>> hobonickels.total_coins()
+4001078.78388
+```
+
+### Addresses:
+
+  - Address balance:
+    [PARAMETER] is required and should be a HBN address.
+
+```
+>>> hobonickels.addressbalance(PARAMETER)
+333099.781601
+```
+
+  - Address to hash:
+    [PARAMETER] is required and should be a HBN address.
+
+```
+>>> hobonickels.addresstohash(PARAMETER)
+5A21B5DBCF936524C946A035AB6C572107B08F6C
+```
+
+  - Check address:
+    [PARAMETER] is required and can be any crypto address.
+
+```
+>>> hobonickels.checkaddress(PARAMETER)
+22
+```
+
+  - Get received by address:
+    [PARAMETER] is required and should be a HBN address.
+
+```
+>>> hobonickels.getreceivedbyaddress(PARAMETER)
+3009149.043709
+```
+
+  - Get sent by address:
+    [PARAMETER] is required and should be a HBN address.
+
+```
+>>> hobonickels.getsentbyaddress(PARAMETER)
+2676049.262108
+```
+
+  - PUBKEY hash:
+    [PARAMETER] is required and should be a PUBKEY.
+
+```
+>>> hobonickels.hashpubkey(PARAMETER)
+C16471CD10EC45881BFE7F75B291962000C67020
+```
+
+  - Hash to address:
+    [PARAMETER] is required and should be an address hash.
+
+```
+>>> hobonickels.hashtoaddress(PARAMETER)
+Es8mAQxXCKHA7YPnBhy4SzhLrmCH27sRu6
+```
+
+  - Translate address:
+    [PARAMETER] is required and can be any crypto address.
+
+```
+>>> hobonickels.hashtoaddress(PARAMETER)
+EuRyukrySwTiA4uQqPD8z3o7WsdeieD4Vo
+```
+
+### Exchanges:
+
+  - BTC:
+
+```
+>>> hobonickels.to_btc()
+{
+    "latest_trade": "2014-04-23 00:56:28", 
+    "volume_btc": "3.75", 
+    "price": "0.00030510", 
+    "price_before_24h": "0.00029690", 
+    "volume_first": "13142.7944186926", 
+    "best_market": "cryptsy", 
+    "volume_second": "3.75384861370549", 
+    "id": "hbn/btc"
+}
+```
 
 ## License:
 
