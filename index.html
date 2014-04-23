@@ -60,7 +60,110 @@
 
 <p>This API can currently retrieve the following stats from <a href="http://hbn.blockx.info/">hbn.blockx.info</a> and <a href="http://www.cryptocoincharts.info">CryptoCoin</a></p>
 
-<p>Work in progress</p>
+<h3>
+<a name="network" class="anchor" href="#network"><span class="octicon octicon-link"></span></a>Network:</h3>
+
+<ul>
+<li>Difficulty:</li>
+</ul><pre><code>&gt;&gt;&gt; import hobonickels
+&gt;&gt;&gt; hobonickels.get_difficulty()
+5.469
+</code></pre>
+
+<ul>
+<li>Hashrate:</li>
+</ul><pre><code>&gt;&gt;&gt; hobonickels.hashrate()
+114711299
+</code></pre>
+
+<ul>
+<li>Block count:</li>
+</ul><pre><code>&gt;&gt;&gt; hobonickels.block_count()
+783661.0
+</code></pre>
+
+<ul>
+<li>Total coins:</li>
+</ul><pre><code>&gt;&gt;&gt; hobonickels.total_coins()
+4001078.78388
+</code></pre>
+
+<h3>
+<a name="addresses" class="anchor" href="#addresses"><span class="octicon octicon-link"></span></a>Addresses:</h3>
+
+<ul>
+<li>Address balance:
+[PARAMETER] is required and should be a HBN address.</li>
+</ul><pre><code>&gt;&gt;&gt; hobonickels.addressbalance(PARAMETER)
+333099.781601
+</code></pre>
+
+<ul>
+<li>Address to hash:
+[PARAMETER] is required and should be a HBN address.</li>
+</ul><pre><code>&gt;&gt;&gt; hobonickels.addresstohash(PARAMETER)
+5A21B5DBCF936524C946A035AB6C572107B08F6C
+</code></pre>
+
+<ul>
+<li>Check address:
+[PARAMETER] is required and can be any crypto address.</li>
+</ul><pre><code>&gt;&gt;&gt; hobonickels.checkaddress(PARAMETER)
+22
+</code></pre>
+
+<ul>
+<li>Get received by address:
+[PARAMETER] is required and should be a HBN address.</li>
+</ul><pre><code>&gt;&gt;&gt; hobonickels.getreceivedbyaddress(PARAMETER)
+3009149.043709
+</code></pre>
+
+<ul>
+<li>Get sent by address:
+[PARAMETER] is required and should be a HBN address.</li>
+</ul><pre><code>&gt;&gt;&gt; hobonickels.getsentbyaddress(PARAMETER)
+2676049.262108
+</code></pre>
+
+<ul>
+<li>PUBKEY hash:
+[PARAMETER] is required and should be a PUBKEY.</li>
+</ul><pre><code>&gt;&gt;&gt; hobonickels.hashpubkey(PARAMETER)
+C16471CD10EC45881BFE7F75B291962000C67020
+</code></pre>
+
+<ul>
+<li>Hash to address:
+[PARAMETER] is required and should be an address hash.</li>
+</ul><pre><code>&gt;&gt;&gt; hobonickels.hashtoaddress(PARAMETER)
+Es8mAQxXCKHA7YPnBhy4SzhLrmCH27sRu6
+</code></pre>
+
+<ul>
+<li>Translate address:
+[PARAMETER] is required and can be any crypto address.</li>
+</ul><pre><code>&gt;&gt;&gt; hobonickels.hashtoaddress(PARAMETER)
+EuRyukrySwTiA4uQqPD8z3o7WsdeieD4Vo
+</code></pre>
+
+<h3>
+<a name="exchanges" class="anchor" href="#exchanges"><span class="octicon octicon-link"></span></a>Exchanges:</h3>
+
+<ul>
+<li>BTC:</li>
+</ul><pre><code>&gt;&gt;&gt; hobonickels.to_btc()
+{
+    "latest_trade": "2014-04-23 00:56:28", 
+    "volume_btc": "3.75", 
+    "price": "0.00030510", 
+    "price_before_24h": "0.00029690", 
+    "volume_first": "13142.7944186926", 
+    "best_market": "cryptsy", 
+    "volume_second": "3.75384861370549", 
+    "id": "hbn/btc"
+}
+</code></pre>
 
 <h2>
 <a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License:</h2>
