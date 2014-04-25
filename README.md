@@ -169,5 +169,7 @@ EuRyukrySwTiA4uQqPD8z3o7WsdeieD4Vo
 If you feel like buying me a coffee (or a beer?), donations are welcome:
 
 ```
-F2Zs4igv8r4oJJzh4sh4bGmeqoUxLQHPki
+WDC : WbcWJzVD8yXt3yLnnkCZtwQo4YgSUdELkj
+HBN : F2Zs4igv8r4oJJzh4sh4bGmeqoUxLQHPki
+DOGE: DRBkryyau5CMxpBzVmrBAjK6dVdMZSBsuS
 ```
