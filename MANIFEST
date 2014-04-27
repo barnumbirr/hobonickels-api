@@ -5,4 +5,5 @@ README.md
 hobonickels/__init__.py
 tests/hobonickels_tests.py
 hobonickels/hobonickels_api.py
+examples/hobonickels_per_day.py
 hobonickels/hobonickels_utils.py
