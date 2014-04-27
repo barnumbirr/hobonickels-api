@@ -121,6 +121,16 @@ Es8mAQxXCKHA7YPnBhy4SzhLrmCH27sRu6
 EuRyukrySwTiA4uQqPD8z3o7WsdeieD4Vo
 ```
 
+  - Address/private key generation :
+
+```
+>>> hobonickels.generate_address()
+{
+    "address": "EwUemkvvJVnREy72fnTkpHsziBWviZaBRb", 
+    "private_key": "QzxvMcixWv3ukY2ckmRMrmNwhRvipk6zoWYfqZPoZ4PW8WsLASuq" 
+}
+```
+
 ### Exchanges:
 
   - BTC:

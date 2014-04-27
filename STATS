@@ -1,31 +1,31 @@
   
    Analyzing: https://github.com/c0ding/hobonickels-api/blob/master/hobonickels/hobonickels_api.py
 
-              Total Lines: 143
+              Total Lines: 153
 
-               Code Lines: 55 (38.4615%)
-              Blank Lines: 46 (32.1678%)
+               Code Lines: 62 (40.5228%)
+              Blank Lines: 50 (32.6797%)
 
-            Comment Lines: 9 (6.29370%)
-         Doc String Lines: 33 (23.0769%)
+            Comment Lines: 1 (0.65359%)
+         Doc String Lines: 40 (26.1437%)
           Inline Comments: 1
-              Doc Strings: 14
-           Total Comments: 24
+              Doc Strings: 16
+           Total Comments: 18
 
         Longest Code Line: 111
        Shortest Code Line: 12 [return e[-1]]
 
-     Longest Comment Line: 77
-    Shortest Comment Line: 5 [# """]
+     Longest Comment Line: 23
+    Shortest Comment Line: 23 [# -*- coding: utf-8 ...]
 
-                  Imports: 4
-                Functions: 14
+                  Imports: 6
+                Functions: 16
                   Classes: 0
             If Statements: 0
            Try Statements: 0
         Except Statements: 0
          Print Statements: 0
-              Assignments: 22
+              Assignments: 24
                 Variables: 7
 
 
@@ -36,32 +36,32 @@
 
   Analyzing: https://github.com/c0ding/hobonickels-api/blob/master/hobonickels/hobonickels_utils.py
 
-              Total Lines: 21
+              Total Lines: 206
 
-               Code Lines: 7 (33.3333%)
-              Blank Lines: 5 (23.8095%)
+               Code Lines: 145 (70.3883%)
+              Blank Lines: 48 (23.3009%)
 
-            Comment Lines: 1 (4.76190%)
-         Doc String Lines: 8 (38.0952%)
+            Comment Lines: 1 (0.48543%)
+         Doc String Lines: 12 (5.82524%)
           Inline Comments: 1
-              Doc Strings: 2
-           Total Comments: 4
+              Doc Strings: 3
+           Total Comments: 5
 
-        Longest Code Line: 69
-       Shortest Code Line: 21 [#!/usr/bin/env pytho...]
+        Longest Code Line: 78
+       Shortest Code Line: 8 [return k]
 
      Longest Comment Line: 23
     Shortest Comment Line: 23 [# -*- coding: utf-8 ...]
 
-                  Imports: 0
-                Functions: 2
-                  Classes: 0
-            If Statements: 0
+                  Imports: 5
+                Functions: 20
+                  Classes: 1
+            If Statements: 17
            Try Statements: 0
         Except Statements: 0
-         Print Statements: 0
-              Assignments: 2
-                Variables: 2
+         Print Statements: 1
+              Assignments: 64
+                Variables: 46
 
 
   Done analyzing: https://github.com/c0ding/hobonickels-api/blob/master/hobonickels/hobonickels_utils.py
@@ -106,12 +106,12 @@
 
   Analyzing: https://github.com/c0ding/hobonickels-api/blob/master/tests/hobonickels_tests.py
 
-              Total Lines: 73
+              Total Lines: 77
 
-               Code Lines: 54 (73.9726%)
-              Blank Lines: 18 (24.6575%)
+               Code Lines: 57 (74.0259%)
+              Blank Lines: 19 (24.6753%)
 
-            Comment Lines: 1 (1.36986%)
+            Comment Lines: 1 (1.29870%)
          Doc String Lines: 0 (0.0%)
           Inline Comments: 1
               Doc Strings: 0
@@ -124,7 +124,7 @@
     Shortest Comment Line: 23 [# -*- coding: utf-8 ...]
 
                   Imports: 4
-                Functions: 13
+                Functions: 14
                   Classes: 1
             If Statements: 1
            Try Statements: 0

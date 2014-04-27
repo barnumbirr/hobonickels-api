@@ -3,11 +3,13 @@
 
 import json
 import urllib
+from hobonickels_utils import get_addr
 from hobonickels_utils import exchange
+from hobonickels_utils import gen_eckey
 from hobonickels_utils import blockexplorer
 
 __title__   = 'hobonickels'
-__version__ = '0.3'
+__version__ = '1.0'
 __author__  = '@c0ding'
 __repo__    = 'https://github.com/c0ding/hobonickels-api'
 __license__ = 'Apache v2.0 License'
@@ -79,16 +81,15 @@ def checkaddress(PARAMETER):
 
 	d = urllib.urlopen(blockexplorer('checkaddress') + '/' + str(PARAMETER))
 	return d.read()
-	
 
-# disabled as function is duplicate of checkaddress()
-# def decode_address(PARAMETER):
-#	 """Returns the version prefix and hash encoded in an address
-#	    [PARAMETER] is required and can be any crypto address.
-#	 """
-#
-#	 d = urllib.urlopen(blockexplorer('decode_address') + '/' + str(PARAMETER))
-#	 return d.read()
+
+def decode_address(PARAMETER):
+	 """Returns the version prefix and hash encoded in an address
+	    [PARAMETER] is required and can be any crypto address.
+	 """
+
+	 d = urllib.urlopen(blockexplorer('decode_address') + '/' + str(PARAMETER))
+	 return d.read()
 
 
 def getreceivedbyaddress(PARAMETER):
@@ -134,6 +135,15 @@ def translate_address(PARAMETER):
 
 	d = urllib.urlopen(blockexplorer('translate_address') + '/' + str(PARAMETER))
 	return d.read()
+	
+
+def generate_address():
+	"""Returns a valid Hobonickels address and it's
+	   matching private key.
+	   On OSX run this in i386 mode.
+	"""
+
+	return get_addr(gen_eckey(compressed=True,version=34),version=34)
 
 
 def to_btc():

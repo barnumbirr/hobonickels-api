@@ -8,7 +8,7 @@ import unittest
 import hobonickels
 
 __title__   = 'hobonickels'
-__version__ = '0.3'
+__version__ = '1.0'
 __author__  = '@c0ding'
 __repo__    = 'https://github.com/c0ding/hobonickels-api'
 __license__ = 'Apache v2.0 License'
@@ -64,6 +64,10 @@ class hobonickelstestsuite(unittest.TestCase):
 	def test_translate_address(self):
 		hobonickels.translate_address('Es8mAQxXCKHA7YPnBhy4SzhLrmCH27sRu6')
 		assert type(hobonickels.translate_address('Es8mAQxXCKHA7YPnBhy4SzhLrmCH27sRu6')) is str
+		
+	def test_generate_address(self):
+		hobonickels.generate_address()
+		assert type(hobonickels.generate_address()) is str
 		
 	def test_to_btc(self):
 		hobonickels.to_btc()
