@@ -22,7 +22,7 @@ or install from PyPi
 
 ## API Documentation:
 
-This API can currently retrieve the following stats from [hbn.blockx.info](http://hbn.blockx.info/) and [CryptoCoin](http://www.cryptocoincharts.info)
+This API can currently retrieve the following stats from [hbn.blockx.info](http://hbn.blockx.info/) and [CryptoCoin](http://www.cryptocoincharts.info):
 
 ### Network:
 
