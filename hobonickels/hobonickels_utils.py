@@ -186,7 +186,7 @@ def reencode(pkey,version=0):
 	print get_addr(gen_eckey(pkey))
 
 
-HBN_BLOCKEXPLORER = 'http://hbn.blockx.info/get/chain/HoboNickels/q/'
+HBN_BLOCKEXPLORER = 'http://hbn.blockx.info/abe/chain/HoboNickels/q/'
 CRYPTOCOIN_API = 'http://www.cryptocoincharts.info/v2/api/tradingPair/'
 
 def blockexplorer(*suffix):

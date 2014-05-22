@@ -5,7 +5,7 @@ from distutils.core import setup
 
 setup(
     name = 'hobonickels',
-    version = '1.0',
+    version = '1.0.1',
     url = 'https://github.com/c0ding/hobonickels-api',
     download_url = 'https://github.com/c0ding/hobonickels-api/archive/master.zip',
     author = 'c0ding',
