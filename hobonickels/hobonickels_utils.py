@@ -198,7 +198,7 @@ def blockexplorer(*suffix):
 	return HBN_BLOCKEXPLORER + '/'.join(suffix)
 
 def exchange(*suffix):
-	"""Returns the entrypoint URL for the Worldcoin price API.
+	"""Returns the entrypoint URL for the Hobonickels price API.
 	   All data provided by CryptoCoin.
 	   http://www.cryptocoincharts.info
 	"""
