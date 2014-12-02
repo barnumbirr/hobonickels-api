@@ -1,6 +1,7 @@
 <h1><img src="https://raw.github.com/c0ding/hobonickels-api/master/doc/hobonickels.png" height=55 alt="hobonickels" title="hobonickels"> hobonickels-api</h1>
 
 [![PyPi Version](http://img.shields.io/pypi/v/hobonickels.svg)](https://pypi.python.org/pypi/hobonickels/)   [![Downloads](http://img.shields.io/pypi/dm/hobonickels.svg)](https://pypi.python.org/pypi/hobonickels/)
+[![Build Status](https://drone.io/github.com/c0ding/hobonickels-api/status.png)](https://drone.io/github.com/c0ding/hobonickels-api/latest)
 
 hobonickels is an APACHE licensed library written in Python designed to provide a simple to use API for the HoboNickels cryptocurrency.
 
