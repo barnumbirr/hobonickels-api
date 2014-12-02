@@ -8,7 +8,7 @@ import unittest
 import hobonickels
 
 __title__   = 'hobonickels'
-__version__ = '1.0.1'
+__version__ = '1.0.2'
 __author__  = '@c0ding'
 __repo__    = 'https://github.com/c0ding/hobonickels-api'
 __license__ = 'Apache v2.0 License'
