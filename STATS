@@ -1,18 +1,18 @@
   
    Analyzing: https://github.com/c0ding/hobonickels-api/blob/master/hobonickels/hobonickels_api.py
 
-              Total Lines: 153
+              Total Lines: 158
 
-               Code Lines: 62 (40.5228%)
-              Blank Lines: 50 (32.6797%)
+               Code Lines: 64 (40.5063%)
+              Blank Lines: 53 (33.5443%)
 
-            Comment Lines: 1 (0.65359%)
-         Doc String Lines: 40 (26.1437%)
+            Comment Lines: 1 (0.63291%)
+         Doc String Lines: 40 (25.3164%)
           Inline Comments: 1
               Doc Strings: 16
            Total Comments: 18
 
-        Longest Code Line: 111
+        Longest Code Line: 102
        Shortest Code Line: 12 [return e[-1]]
 
      Longest Comment Line: 23
@@ -25,8 +25,8 @@
            Try Statements: 0
         Except Statements: 0
          Print Statements: 0
-              Assignments: 24
-                Variables: 7
+              Assignments: 26
+                Variables: 8
 
 
   Done analyzing: https://github.com/c0ding/hobonickels-api/blob/master/hobonickels/hobonickels_api.py
@@ -36,13 +36,13 @@
 
   Analyzing: https://github.com/c0ding/hobonickels-api/blob/master/hobonickels/hobonickels_utils.py
 
-              Total Lines: 206
+              Total Lines: 213
 
-               Code Lines: 145 (70.3883%)
-              Blank Lines: 48 (23.3009%)
+               Code Lines: 150 (70.4225%)
+              Blank Lines: 50 (23.4741%)
 
-            Comment Lines: 1 (0.48543%)
-         Doc String Lines: 12 (5.82524%)
+            Comment Lines: 1 (0.46948%)
+         Doc String Lines: 12 (5.63380%)
           Inline Comments: 1
               Doc Strings: 3
            Total Comments: 5
@@ -60,8 +60,8 @@
            Try Statements: 0
         Except Statements: 0
          Print Statements: 1
-              Assignments: 64
-                Variables: 46
+              Assignments: 69
+                Variables: 48
 
 
   Done analyzing: https://github.com/c0ding/hobonickels-api/blob/master/hobonickels/hobonickels_utils.py
