@@ -29,22 +29,23 @@
       </header>
       <section>
         <h1>
-<a name="-hobonickels-api" class="anchor" href="#-hobonickels-api"><span class="octicon octicon-link"></span></a>
+<a id="-hobonickels-api" class="anchor" href="#-hobonickels-api" aria-hidden="true"><span class="octicon octicon-link"></span></a>
 <img src="https://raw.github.com/c0ding/hobonickels-api/master/doc/hobonickels.png" height="55" alt="hobonickels" title="hobonickels"> hobonickels-api</h1>
 
-<p><a href="https://pypi.python.org/pypi/hobonickels/"><img src="http://img.shields.io/pypi/v/hobonickels.svg" alt="PyPi Version"></a>   <a href="https://pypi.python.org/pypi/hobonickels/"><img src="http://img.shields.io/pypi/dm/hobonickels.svg" alt="Downloads"></a></p>
+<p><a href="https://pypi.python.org/pypi/hobonickels/"><img src="http://img.shields.io/pypi/v/hobonickels.svg" alt="PyPi Version"></a>   <a href="https://pypi.python.org/pypi/hobonickels/"><img src="http://img.shields.io/pypi/dm/hobonickels.svg" alt="Downloads"></a>
+<a href="http://jenkins.calypso.pm/job/hobonickels-api/"><img src="http://jenkins.calypso.pm/buildStatus/icon?job=hobonickels-api" alt="Build Status"></a></p>
 
 <p>hobonickels is an APACHE licensed library written in Python designed to provide a simple to use API for the HoboNickels cryptocurrency.</p>
 
 <h2>
-<a name="more-about-hobonickels" class="anchor" href="#more-about-hobonickels"><span class="octicon octicon-link"></span></a>More about HoboNickels:</h2>
+<a id="more-about-hobonickels" class="anchor" href="#more-about-hobonickels" aria-hidden="true"><span class="octicon octicon-link"></span></a>More about HoboNickels:</h2>
 
 <p>HoboNickels is a cryptographic currency, similar to Bitcoin, that is designed to make online transactions easy and efficient.</p>
 
 <p>HoboNickels wallet clients are being actively developed and improved upon. HoboNickels (HBN) is an extremely fast and efficient crypto-currency. With a Proof of Work block time of 30 seconds coupled with fast Proof of Stake, it is pushing to be one of the fastest coins available. The 2-5% Proof of Stake is also one of the most generous staking algorithms released. The stake is designed to keep the inflation rate from getting out of control, with the % of stake decreasing as more people stake the coin. HoboNickels has the added security of a Proof of Stake coin with the addition of security features like Automated Block Checkpoints. HoboNickels are the first coin to use Multi-Wallet functionality.</p>
 
 <h2>
-<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation:</h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation:</h2>
 
 <p>From source use</p>
 
@@ -57,100 +58,126 @@
 </code></pre>
 
 <h2>
-<a name="api-documentation" class="anchor" href="#api-documentation"><span class="octicon octicon-link"></span></a>API Documentation:</h2>
+<a id="api-documentation" class="anchor" href="#api-documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>API Documentation:</h2>
 
 <p>This API can currently retrieve the following stats from <a href="http://hbn.blockx.info/">hbn.blockx.info</a> and <a href="http://www.cryptocoincharts.info">CryptoCoin</a>:</p>
 
 <h3>
-<a name="network" class="anchor" href="#network"><span class="octicon octicon-link"></span></a>Network:</h3>
+<a id="network" class="anchor" href="#network" aria-hidden="true"><span class="octicon octicon-link"></span></a>Network:</h3>
 
 <ul>
 <li>Difficulty:</li>
-</ul><pre><code>&gt;&gt;&gt; import hobonickels
+</ul>
+
+<pre><code>&gt;&gt;&gt; import hobonickels
 &gt;&gt;&gt; hobonickels.get_difficulty()
 5.469
 </code></pre>
 
 <ul>
 <li>Hashrate:</li>
-</ul><pre><code>&gt;&gt;&gt; hobonickels.hashrate()
+</ul>
+
+<pre><code>&gt;&gt;&gt; hobonickels.hashrate()
 114711299
 </code></pre>
 
 <ul>
 <li>Block count:</li>
-</ul><pre><code>&gt;&gt;&gt; hobonickels.block_count()
+</ul>
+
+<pre><code>&gt;&gt;&gt; hobonickels.block_count()
 783661.0
 </code></pre>
 
 <ul>
 <li>Total coins:</li>
-</ul><pre><code>&gt;&gt;&gt; hobonickels.total_coins()
+</ul>
+
+<pre><code>&gt;&gt;&gt; hobonickels.total_coins()
 4001078.78388
 </code></pre>
 
 <h3>
-<a name="addresses" class="anchor" href="#addresses"><span class="octicon octicon-link"></span></a>Addresses:</h3>
+<a id="addresses" class="anchor" href="#addresses" aria-hidden="true"><span class="octicon octicon-link"></span></a>Addresses:</h3>
 
 <ul>
 <li>Address balance:
 [PARAMETER] is required and should be a HBN address.</li>
-</ul><pre><code>&gt;&gt;&gt; hobonickels.addressbalance(PARAMETER)
+</ul>
+
+<pre><code>&gt;&gt;&gt; hobonickels.addressbalance(PARAMETER)
 333099.781601
 </code></pre>
 
 <ul>
 <li>Address to hash:
 [PARAMETER] is required and should be a HBN address.</li>
-</ul><pre><code>&gt;&gt;&gt; hobonickels.addresstohash(PARAMETER)
+</ul>
+
+<pre><code>&gt;&gt;&gt; hobonickels.addresstohash(PARAMETER)
 5A21B5DBCF936524C946A035AB6C572107B08F6C
 </code></pre>
 
 <ul>
 <li>Check address:
 [PARAMETER] is required and can be any crypto address.</li>
-</ul><pre><code>&gt;&gt;&gt; hobonickels.checkaddress(PARAMETER)
+</ul>
+
+<pre><code>&gt;&gt;&gt; hobonickels.checkaddress(PARAMETER)
 22
 </code></pre>
 
 <ul>
 <li>Get received by address:
 [PARAMETER] is required and should be a HBN address.</li>
-</ul><pre><code>&gt;&gt;&gt; hobonickels.getreceivedbyaddress(PARAMETER)
+</ul>
+
+<pre><code>&gt;&gt;&gt; hobonickels.getreceivedbyaddress(PARAMETER)
 3009149.043709
 </code></pre>
 
 <ul>
 <li>Get sent by address:
 [PARAMETER] is required and should be a HBN address.</li>
-</ul><pre><code>&gt;&gt;&gt; hobonickels.getsentbyaddress(PARAMETER)
+</ul>
+
+<pre><code>&gt;&gt;&gt; hobonickels.getsentbyaddress(PARAMETER)
 2676049.262108
 </code></pre>
 
 <ul>
 <li>PUBKEY hash:
 [PARAMETER] is required and should be a PUBKEY.</li>
-</ul><pre><code>&gt;&gt;&gt; hobonickels.hashpubkey(PARAMETER)
+</ul>
+
+<pre><code>&gt;&gt;&gt; hobonickels.hashpubkey(PARAMETER)
 C16471CD10EC45881BFE7F75B291962000C67020
 </code></pre>
 
 <ul>
 <li>Hash to address:
 [PARAMETER] is required and should be an address hash.</li>
-</ul><pre><code>&gt;&gt;&gt; hobonickels.hashtoaddress(PARAMETER)
+</ul>
+
+<pre><code>&gt;&gt;&gt; hobonickels.hashtoaddress(PARAMETER)
 Es8mAQxXCKHA7YPnBhy4SzhLrmCH27sRu6
 </code></pre>
 
 <ul>
 <li>Translate address:
 [PARAMETER] is required and can be any crypto address.</li>
-</ul><pre><code>&gt;&gt;&gt; hobonickels.hashtoaddress(PARAMETER)
+</ul>
+
+<pre><code>&gt;&gt;&gt; hobonickels.hashtoaddress(PARAMETER)
 EuRyukrySwTiA4uQqPD8z3o7WsdeieD4Vo
 </code></pre>
 
 <ul>
 <li>Address/private key generation :</li>
-</ul><pre><code>&gt;&gt;&gt; hobonickels.generate_address()
+</ul>
+
+<pre><code>&gt;&gt;&gt; hobonickels.generate_address()
 {
     "address": "EwUemkvvJVnREy72fnTkpHsziBWviZaBRb", 
     "private_key": "QzxvMcixWv3ukY2ckmRMrmNwhRvipk6zoWYfqZPoZ4PW8WsLASuq" 
@@ -158,11 +185,13 @@ EuRyukrySwTiA4uQqPD8z3o7WsdeieD4Vo
 </code></pre>
 
 <h3>
-<a name="exchanges" class="anchor" href="#exchanges"><span class="octicon octicon-link"></span></a>Exchanges:</h3>
+<a id="exchanges" class="anchor" href="#exchanges" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exchanges:</h3>
 
 <ul>
 <li>BTC:</li>
-</ul><pre><code>&gt;&gt;&gt; hobonickels.to_btc()
+</ul>
+
+<pre><code>&gt;&gt;&gt; hobonickels.to_btc()
 {
     "latest_trade": "2014-04-23 00:56:28", 
     "volume_btc": "3.75", 
@@ -176,7 +205,7 @@ EuRyukrySwTiA4uQqPD8z3o7WsdeieD4Vo
 </code></pre>
 
 <h2>
-<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License:</h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License:</h2>
 
 <pre><code>  Apache v2.0 License
   Copyright 2014 Martin Simon
@@ -196,13 +225,15 @@ EuRyukrySwTiA4uQqPD8z3o7WsdeieD4Vo
 </code></pre>
 
 <h2>
-<a name="useful-links" class="anchor" href="#useful-links"><span class="octicon octicon-link"></span></a>Useful links:</h2>
+<a id="useful-links" class="anchor" href="#useful-links" aria-hidden="true"><span class="octicon octicon-link"></span></a>Useful links:</h2>
 
 <ul>
 <li><a href="http://www.hobonickels.info/">Hobonickels website</a></li>
 <li><a href="http://hbn.blockx.info/">Hobonickels Blockexplorer</a></li>
-</ul><h2>
-<a name="buy-me-a-coffee" class="anchor" href="#buy-me-a-coffee"><span class="octicon octicon-link"></span></a>Buy me a coffee?</h2>
+</ul>
+
+<h2>
+<a id="buy-me-a-coffee" class="anchor" href="#buy-me-a-coffee" aria-hidden="true"><span class="octicon octicon-link"></span></a>Buy me a coffee?</h2>
 
 <p>If you feel like buying me a coffee (or a beer?), donations are welcome:</p>
 
