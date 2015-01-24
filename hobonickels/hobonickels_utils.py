@@ -1,21 +1,21 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import sys
 import json
 import ctypes
 import hashlib
 import ctypes.util
 
-__title__   = 'hobonickels'
+__title__ = 'hobonickels'
 __version__ = '1.0.2'
-__author__  = '@c0ding'
-__repo__    = 'https://github.com/c0ding/hobonickels-api'
+__author__ = '@c0ding'
+__repo__ = 'https://github.com/c0ding/hobonickels-api'
 __license__ = 'Apache v2.0 License'
 
-"""This part of the code is where the magic happens.
-   # Joric/bitcoin-dev, june 2012, public domain
-   # modified by c0ding, 2014
+"""
+This part of the code is where the magic happens.
+Joric/bitcoin-dev, june 2012, public domain
+modified by c0ding, 2014
 """
 
 ssl = ctypes.cdll.LoadLibrary (ctypes.util.find_library ('ssl') or 'libeay32')
@@ -70,12 +70,12 @@ class KEY:
 		
 	def get_secret(self):
 		bn = ssl.EC_KEY_get0_private_key(self.k);
-		bytes = (ssl.BN_num_bits(bn) + 7) / 8
-		mb = ctypes.create_string_buffer(bytes)
+		_bytes = (ssl.BN_num_bits(bn) + 7) / 8
+		mb = ctypes.create_string_buffer(_bytes)
 		n = ssl.BN_bn2bin(bn, mb);
 		return mb.raw.rjust(32, chr(0))
 
-		
+
 	def set_compressed(self, compressed):
 		self.compressed = compressed
 		if compressed:
@@ -84,11 +84,11 @@ class KEY:
 			form = self.POINT_CONVERSION_UNCOMPRESSED
 		ssl.EC_KEY_set_conv_form(self.k, form)
 
-		
+
 def dhash(s):
 	return hashlib.sha256(hashlib.sha256(s).digest()).digest()
 
-	
+
 def rhash(s):
 	h1 = hashlib.new('ripemd160')
 	h1.update(hashlib.sha256(s).digest())
@@ -197,17 +197,20 @@ CRYPTOCOIN_API = 'http://api.cryptocoincharts.info/tradingPair/'
 
 
 def blockexplorer(*suffix):
-	"""Returns the entrypoint URL for the Hobonickels block API.
-	   All data provided by hbn.blockx.info.
-	   http://www.worldcoinexplorer.com
 	"""
-	
+	Returns the entrypoint URL for the Hobonickels block API.
+	All data provided by hbn.blockx.info.
+	http://www.worldcoinexplorer.com
+	"""
+
 	return HBN_BLOCKEXPLORER + '/'.join(suffix)
 
+
 def exchange(*suffix):
-	"""Returns the entrypoint URL for the Hobonickels price API.
-	   All data provided by CryptoCoin.
-	   http://www.cryptocoincharts.info
 	"""
-	
+	Returns the entrypoint URL for the Hobonickels price API.
+	All data provided by CryptoCoin.
+	http://www.cryptocoincharts.info
+	"""
+
 	return CRYPTOCOIN_API + '/'.join(suffix)

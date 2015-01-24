@@ -1,8 +1,10 @@
 <h1><img src="https://raw.github.com/c0ding/hobonickels-api/master/doc/hobonickels.png" height=55 alt="hobonickels" title="hobonickels"> hobonickels-api</h1>
 
-[![PyPi Version](http://img.shields.io/pypi/v/hobonickels.svg)](https://pypi.python.org/pypi/hobonickels/)   [![Downloads](http://img.shields.io/pypi/dm/hobonickels.svg)](https://pypi.python.org/pypi/hobonickels/)
+[![PyPi Version](http://img.shields.io/pypi/v/hobonickels.svg)](https://pypi.python.org/pypi/hobonickels/)
+[![Downloads](http://img.shields.io/pypi/dm/hobonickels.svg)](https://pypi.python.org/pypi/hobonickels/)
+[![Code Health](https://landscape.io/github/c0ding/hobonickels-api/master/landscape.svg)](https://landscape.io/github/c0ding/hobonickels-api/master)
 
-hobonickels is an APACHE licensed library written in Python designed to provide a simple to use API for the HoboNickels cryptocurrency.
+**hobonickels** is an APACHE licensed library written in Python designed to provide a simple to use API for the HoboNickels cryptocurrency.
 
 ## More about HoboNickels:
 
@@ -153,7 +155,7 @@ EuRyukrySwTiA4uQqPD8z3o7WsdeieD4Vo
 
 ```
   Apache v2.0 License
-  Copyright 2014 Martin Simon
+  Copyright 2014-2015 Martin Simon
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
